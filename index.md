@@ -1,5 +1,5 @@
 ## -> %lime% ![Logo](https://styles.redditmedia.com/t5_ab6jz1/styles/communityIcon_fv793fnur75c1.png){60px:60px}  !~lime;default;default;6; ❱❱ SOORZJ & XTX's Guide to DODI REPACKS ❰❰~! %% <- ![Logo](https://styles.redditmedia.com/t5_ab6jz1/styles/communityIcon_fv793fnur75c1.png){60px:60px} 
-%cyan%[**INTRODUCTION**](#introduction)%% | %cyan%[**HOW TO NAVIGATE**](#how-to-navigate-on-dodi-repacks)%% | %cyan%[**HOW TO DOWNLOAD**](#how-to-download-a-game-from-dodi-repacks)%% | %cyan%[**FIXING COMMON ERRORS**](#fixing-common-errors)%% | %cyan%[**HOW TO INSTALL**](#how-to-install-games)%% | %cyan%[**DOWNLOADED THE WRONG FILE?**](#did-you-download-the-wrong-file)%%
+: %cyan%[**INTRODUCTION**](#introduction)%% | %cyan%[**HOW TO NAVIGATE**](#how-to-navigate-on-dodi-repacks)%% | %cyan%[**HOW TO DOWNLOAD**](#how-to-download-a-game-from-dodi-repacks)%% | %cyan%[**FIXING COMMON ERRORS**](#fixing-common-errors)%% | %cyan%[**HOW TO INSTALL**](#how-to-install-games)%% | %cyan%[**DOWNLOADED THE WRONG FILE?**](#did-you-download-the-wrong-file)%%
 : : | : : | : : | : : | : :| : : 
 
 ***
