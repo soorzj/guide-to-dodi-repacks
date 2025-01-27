@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOORZJ & XTX's Guide to DODI REPACKS</title>
     <style>
+        @font-face {
+            font-family: 'CustomHeadingFont';
+            src: url('path/to/your/fontfile.otf') format('opentype');
+        }
+
+        .rounded-section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #00ff0825;
+            color: #000000;
         }
 
         header {
@@ -32,10 +45,11 @@
             text-decoration: none;
             margin: 0 0.5rem;
             font-weight: bold;
+            font-family: "Bahnschrift";
         }
 
         nav a:hover {
-            text-decoration: underline;
+            text-decoration: bold;
         }
 
         .container {
@@ -46,13 +60,18 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        h1, h2, h3, h4, h5 {
-            color: #333;
+        h1 {
+            color: #000000;
+            font-family: 'CustomHeadingFont', sans-serif;
+        }
+        h2, h3, h4, h5 {
+            color: #000000;
+            font-family: 'segoe ui', sans-serif;
         }
 
         .note {
-            background: #e7f3fe;
+            background-color: #e7f3fe;
+            color: #000000;
             border-left: 6px solid #2196F3;
             padding: 10px;
             margin: 20px 0;
@@ -66,7 +85,7 @@
         }
 
         a {
-            color: #4CAF50;
+            color: #002ffff5;
             text-decoration: none;
         }
 
@@ -106,50 +125,109 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
+        .nav-separator {
+            color: rgba(255, 255, 255, 0.7); /* Subtle white */
+            margin: 0 0.5rem; /* Add space around the separator */
+            font-weight: bold; /* Make the separator stand out */
+            font-size: 1.2rem; /* Slightly larger size */
+        }
+
+        .centered-iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="header-logo">
-            <img src="https://styles.redditmedia.com/t5_ab6jz1/styles/communityIcon_fv793fnur75c1.png" alt="Logo">
-            <h1>SOORZJ & XTX's Guide to DODI REPACKS</h1>
+    <header style="color: rgb(179, 181, 255);">
+        <div class="header-logo" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <img src="https://i.imgur.com/ukwdBDJ.png" alt="Left Image" class="logo-image">
+            <img src="./SOORZJ &amp; XTX&#39;s Guide to DODI REPACKS_files/communityIcon_fv793fnur75c1.png" alt="Center Image" class="logo-image">
+            <img src="https://i.imgur.com/AIPeWL4.png" alt="Right Image" class="logo-image">
         </div>
+        <h1 style="color: white; text-align: center;">SOORZJ &amp; XTX's Guide to DODI REPACKS</h1>
         <nav>
-            <a href="#introduction">Introduction</a>
-            <a href="#how-to-navigate">How to Navigate</a>
-            <a href="#how-to-download">How to Download</a>
-            <a href="#fixing-common-errors">Fixing Common Errors</a>
-            <a href="#how-to-install">How to Install</a>
-            <a href="#wrong-file">Wrong File?</a>
+            <a href="https://soorzj.github.io/guide-to-dodi-repacks/#introduction" style="color: white;">Introduction</a>
+            <span class="nav-separator">|</span>
+            <a href="https://soorzj.github.io/guide-to-dodi-repacks/#how-to-navigate" style="color: white;">How to Navigate</a>
+            <span class="nav-separator">|</span>
+            <a href="https://soorzj.github.io/guide-to-dodi-repacks/#how-to-download" style="color: white;">How to Download</a>
+            <span class="nav-separator">|</span>
+            <a href="https://soorzj.github.io/guide-to-dodi-repacks/#fixing-common-errors" style="color: white;">Fixing Common Errors</a>
+            <span class="nav-separator">|</span>
+            <a href="https://soorzj.github.io/guide-to-dodi-repacks/#how-to-install" style="color: white;">How to Install</a>
+            <span class="nav-separator">|</span>
+            <a href="https://soorzj.github.io/guide-to-dodi-repacks/#wrong-file" style="color: white;">Wrong File?</a>
+            <span class="nav-separator">|</span>
+            <a href="https://soorzj.github.io/guide-to-dodi-repacks/#contribute" style="color: white;">Contribute</a>
+            <span class="nav-separator">|</span>
+            <a href="https://soorzj.github.io/guide-to-dodi-repacks/#disclaimer" style="color: white;">Disclaimer</a>
+            <span class="nav-separator">|</span>
+            <a href="https://soorzj.github.io/guide-to-dodi-repacks/#contributors" style="color: white;">Contributors</a>
         </nav>
     </header>
 
-    <div class="container">
+    
+        <div class="rounded-section">
         <section id="introduction">
             <h2 class="section-title">➥ Introduction</h2>
             <div class="note">
-                <p>OK so this is a thorough article that includes extra information, any non-critical information is colored orange.</p>
+                <p>This is a thorough article that includes a lot of information, any important information is colored <strong style="color: rgb(255, 0, 0);">as RED</strong>.</p>
             </div>
-            <p><span style="color: orange;">DODI</span> is a well-known repacker who "repacks" games. Repacks are games compressed to reduce their file sizes for easier downloads. <span style="color: orange;">DODI does not crack (remove DRM) from games.</span></p>
+            <p><span style="color: rgb(0, 0, 0);">DODI is a well known game repacker, like Fitgirl, who constantly works on recently released games. He has been uploading since 20XY and is widely known for medium compression level repacks, which drastically reduces install time and system resource usage, and the use of trusted, clean files in all his releases. There is just one problem - his active community is not big, thus most people "hit and run" his repacks without seeding them.  (averagely popular releases get thier seeders dropped to digits like 2 or 5 just one week after thier release) This makes him unreliable on the torrent manner of downloading his repacks, for which he uses certain file-hosters to keep his releases online always. (which is, btw, a huge relaxation for people who live in countries where torrenting is illegal) If you want to download a certain release, and find out that the torrent is dead, you might want to download from those file-hosters which is quite a nasty task to do, since those hosters,by implementing certain unlawful measures like putting ads and popups in thier pages, for thier extra income, (let alone Dodi paying a lot for thier storage) prove a headache for people who aren't experienced. We at Dodi, tirelessly work for free to solve all your issues from downloading till playing, and spent a lot of time making this extensive guide, its purpose, guiding you through the download process, because there is a lot to say about things, which we possibly cannot communicate to you via messages. This guide is designed to help anyone downloading DODI Repacks, and can be used by anyone from a complete begginer to downloading something to a intermediate novice.</span></p>
         </section>
+    </div>
 
-        <section id="how-to-navigate">
-            <h2 class="section-title">➥ How to Navigate on DODI Repacks</h2>
-            <h3>Navigating the Correct Site</h3>
-            <div class="note">
-                <p><strong>The official sites are:</strong> <a href="https://dodi-repacks.site">dodi-repacks.site</a> and <a href="https://dodi-repacks.download">dodi-repacks.download</a>.</p>
-            </div>
-            <h3>Using an Adblocker</h3>
-            <p><span style="color: orange;">Piracy isn't legal, so the file-hosting sites often include ads with malware. Use a strong ad blocker like uBlock Origin.</span></p>
-            <a href="https://librewolf.net/installation/" class="note">Highly Recommended: LibreWolf</a>
-            <img src="https://i.imgur.com/7semKm1.png" alt="Quick Guide">
-        </section>
-
+    <div class="rounded-section">
+        <h2 class="section-title">➥ How to Navigate on DODI Repacks</h2>
+    
+        <h3>❱❱ Navigating the Correct Site</h3>
+        <div class="note">
+            <p><strong style="color: rgb(0, 0, 0);">The one and only DODI repacks website is:</strong> 
+                <a href="https://dodi-repacks.site" style="color: rgb(0, 26, 255);">dodi-repacks.site</a>
+            </p>
+            <p><strong style="color: rgb(0, 0, 0);">The one and only DODI repacks backup website is:</strong> 
+                <a href="https://dodi-repacks.download" style="color: rgb(0, 26, 255);">dodi-repacks.download</a>
+            </p>
+        </div>
+    
+        <h3>❱❱ Using an Adblocker</h3>
+        <p style="color: rgb(193, 0, 0);">
+            Now piracy isn't exactly legal, so the filehoster sites used are, of course, less than legit. The ads there often contain malware 
+            (this is the case for almost all piracy sites), so you must have an adblocker. 
+            The in-built AdBlockers that come with browsers like Edge/Brave/Opera/Opera GX are NOT STRONG ENOUGH.
+            You must either download LibreWolf (based on Firefox and comes with uBlock Origin by default) or get uBlock Origin Lite 
+            (non-lite only works on Firefox) if you don't want to switch.
+        </p>
+        <ul>
+            <li>
+                <strong style="color: lime;">HIGHLY RECOMMENDED:</strong> 
+                <a href="https://librewolf.net/installation/" style="color: rgb(23, 2, 255);">LibreWolf</a>
+            </li>
+            <li>
+                <strong style="color: lime;">uBlock Origin:</strong> Just get it from the Chrome web store or wherever you get extensions from. 
+                </li>
+                <li>
+                <strong style="color: lime;">Adguard Browser Extension:</strong> This is also a good option.
+                If you don't know how to install extensions, just Google "how to download extensions (your browser)".
+            </li>
+        </ul>
+    
+        <hr>
+        <p>
+            🔻A quick look at this image will tell you everything you need to know about the DODI-Repacks website 🔻
+        </p>
+        <img src="https://i.imgur.com/7semKm1.png" alt="Quick Guide image" style="max-width: 100%; height: auto;">
+    </div>
+    
         <section id="how-to-download">
+            <div class="rounded-section">
             <h2 class="section-title">➥ How to Download a Game from DODI Repacks</h2>
             <blockquote>
-                <strong>WARNING!</strong> If you get a file with a password or a size that doesn't match the game's size, it's likely malware. DODI never puts passwords on files unless explicitly stated.
+                <strong>WARNING!</strong> <strong style="color: rgb(255, 0, 0);">If you get a file with a password or a size that doesn't match the game's size, it's likely malware. DODI never puts passwords on files unless explicitly stated.</strong>
             </blockquote>
             <p>This is what the DODI installer looks like:</p>
             <img src="https://i.imgur.com/ZRYiBMB.png" alt="New Installer">
@@ -167,51 +245,166 @@
                 <li>Torrenting is the most convenient way to get your games, but it does have some caveats.</li>
                 <li>If you are in Argentina, the US, Canada, UK, UAE, Korea, Italy, France, Japan, Spain, Netherlands, Mexico, Turkey, New Zealand, or Australia, you need a VPN for torrenting. If not, you don't need one. ProtonVPN premium is highly recommended for its port forwarding feature.</li>
                 <li><span style="color: orange;"><strong>If you want to know how torrenting works:</strong></span> <a href="https://majesty.lol/post/introduction-to-torrents"><strong>Queen's Guide to Torrents</strong></a></li>
-                <li>Download a BitTorrent client, preferably <a href="https://www.qbittorrent.org/download">qBittorrent</a>. Avoid uTorrent or BitTorrent as they have had malware issues.</li>
+                <li>Download a BitTorrent client, preferably <a href="https://www.qbittorrent.org/download">qBittorrent</a>.<strong style="color: rgb(255, 0, 0);"> Avoid uTorrent or BitTorrent as they have had malware issues.</strong></li>
             </ul>
             <p>Steps to set up qBittorrent:</p>
             <ol>
                 <li>Enable your VPN, go to settings, and adjust connection and advanced settings as outlined in this guide.</li>
                 <li>Set your VPN to use Wireguard UDP for the best speed.</li>
-                <li>Find your desired game and torrent it. If links are down, try <a href="https://1337x.to">1337X.to</a>, ensuring DODI is the uploader.</li>
+                <li>Find your desired game and torrent it. If links are down, try <a href="https://1337x.to">1337X.to</a>,<strong style="color: rgb(255, 0, 0);">ensuring DODI is the uploader.</strong> </li>
             </ol>
 
             <h3>❱❱ <span style="color: magenta;">Multi-Hosts (500 MB | 2GB | 10GB Links)</span></h3>
             <ul>
                 <li>Always use a download manager like <a href="https://jdownloader.org/download/index">JDownloader 2</a> for faster downloads.</li>
                 <li>Ensure files are downloaded in the correct order without renaming them.</li>
-                <li><span style="color: red;">Red arrows/markers</span> indicate malicious sites, and <span style="color: green;">green</span> indicates potentially safe but still risky sites. Never disable your adblocker.</li>
+                <li><strong style="color: rgb(255, 0, 0);">Don't forget the Adblocker</strong></li>
+            
+                <li>
+                    <span style="color: green; font-weight: bold;">Pastebin</span>
+                    <ul>
+                        <li>You will see a list of links arranged in order.</li>
+                        <li>Copy-paste each link onto your browser and click go. Download each file.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color: green; font-weight: bold;">Multi-up·org</span>
+                    <ul>
+                        <li>Downloading from Multi-up is very straightforward. Don't disable Adblocker; you can still download with an Adblocker on.</li>
+                        <li>Click on the big blue <code>DOWNLOAD</code> button to get a variety of sites that have the file.</li>
+                        <li>Sites that show <code>Invalid Now</code> will not have the file as it might get removed due to copyright. Click on the <code>Download</code> button on the ones that show <code>Valid Now</code>.</li>
+                        <li>Most sites have a cooldown before the next download, so it's kind of annoying. In such cases, switch to torrenting.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color: green; font-weight: bold;">Loot-Link·com</span>
+                    <ul>
+                        <li>This may seem absurd to download Opera GX, enable notifications, or read news to get the files at first, but there's a workaround.</li>
+                        <li>Click on <code>DOWNLOAD AND INSTALL</code>.</li>
+                        <li>Close the pop-up immediately as it opens and don't let it start the download.</li>
+                        <li>Let the loading icon twist for a long time.</li>
+                        <li>The content will automatically unlock after approximately 30 seconds. Click on <code>UNLOCK CONTENT</code> to get to Pastebin where you will see the download links.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color: green; font-weight: bold;">Health Shield / Policy Buzz etc (tii·la)</span>
+                    <ul>
+                        <li>Solve the <code>reCAPTCHA (I am human)</code> and click on <code>Continue</code>.</li>
+                        <li>Wait for 10 seconds and click <code>Continue...</code>.</li>
+                        <li>A pop-up will come as a new tab (redirect). CLOSE IT.</li>
+                        <li>Scroll down and you will find <code>Get Link Here</code>. Click it.</li>
+                        <li>A redirect again! CLOSE IT!</li>
+                        <li>Wait for 10 seconds and click <code>Get Link</code> to get to Pastebin where you will see the download links.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color: green; font-weight: bold;">Swift Files</span>
+                    <ul>
+                        <li>Ads are everywhere, so please use Ublock Origin; it will help a lot. Fake stuff is marked through screenshots below.</li>
+                        <li>Opening the site for the first time and clicking anywhere will redirect to a fake/malicious site. Thankfully, Ublock blocks it already.</li>
+                        <li><img src="https://imgur.com/cTNPxKT.png" alt="Swift Files" style="max-width: 80%; height: auto;"></li>
+                        <li>Scroll down and click <code>Regular Download</code>. Most of the time, it won't redirect to a malicious site. If it does, Ublock closes the popup immediately. After you're on a new link, it may redirect again, so ignore or close the popup.</li>
+                        <li>See below and enter the code for the captcha, then the download will start.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color: green; font-weight: bold;">KrakenFiles·com</span>
+                    <ul>
+                        <li>The download process is simple and straightforward. Click the <code>Download now</code> button on the bottom left.</li>
+                    </ul>
+                </li>
             </ul>
-
-            <p>Specific host instructions:</p>
-            <ul>
-                <li><strong>Pastebin:</strong> Copy-paste links into your browser to download files.</li>
-                <li><strong>Multi-up·org:</strong> Use the blue download button and select valid links.</li>
-                <li><strong>Loot-Link·com:</strong> Follow the steps to unlock content after a brief wait.</li>
-                <li><strong>Health Shield / Policy Buzz:</strong> Complete CAPTCHAs and navigate redirects cautiously.</li>
-                <li><strong>Swift Files:</strong> Use adblockers to handle malicious redirects and follow steps to complete downloads.</li>
-            </ul>
+            
         </section>
+    </div>
 
-        <section id="fixing-common-errors">
-            <h2 class="section-title">➥ Fixing Common Errors</h2>
-            <ul>
-                <li>Install games outside <code>Program Files (x86)</code>.</li>
-                <li>Turn off antivirus during setup.</li>
-                <li>Add exclusions for your games directory in antivirus software.</li>
-                <li>Prefer shorter installation paths.</li>
-            </ul>
-        </section>
-
-        <section id="how-to-install">
-            <h2 class="section-title">➥ How to Install Games</h2>
-            <p>Use <a href="https://www.7-zip.org/download.html">7-Zip</a> to extract files for DDL downloads. Run the setup file and verify the game works before deleting parts.</p>
-        </section>
-
-        <section id="wrong-file">
-            <h2 class="section-title">➥ Did You Download the Wrong File?</h2>
-            <p>If you've downloaded a suspicious file, visit the <a href="https://rentry.org/XTXs-malware-removal-guide">Malware Removal Guide</a>.</p>
-        </section>
+    <div class="rounded-section">
+        <h2 class="section-title">➥ How to Install Games</h2>
+        <p>
+            If you have done a DDL, download 
+            <a href="https://www.7-zip.org/download.html" style="color: #1500ff;">7-ZIP</a>, select all parts, 
+            and use 7Z to extract them. (On Windows 11, you'll have to click "More Options" to find 7Z.) 
+            Once they're done, open the folder and run the setup. 
+            <strong>It is not recommended to delete the parts until the game is verified to work.</strong>
+        </p>
+        <p>
+            If you want to play a game online, you may have to go to 
+            <a href="http://online-fix.me" style="color: #002fff;">online-fix.me</a> for the online fix.
+        </p>
+        <p>If you did the torrent, simply run the setup.</p>
+    </div>
+    
+    <div class="rounded-section">
+        <h2 class="section-title">➥ Fixing Common Errors</h2>
+        <p>It is common to encounter various errors and problems during/after installation of DODI Repacks. Here are some common fixes:</p>
+        <ul>
+            <li><strong>Install to games, NOT Program Files (x86).</strong></li>
+            <li><strong>Turn off antivirus during setup.</strong></li>
+            <li><strong>Add an exclusion to the directory where you normally install your games (e.g., C:\Games).</strong></li>
+            <li><strong>Un-select the "DirectX 9.0c" option unless it's your first time.</strong></li>
+            <li><strong>Prefer installing onto a shorter path.</strong></li>
+        </ul>
+        <hr>
+        <p>
+            This is a small list of common fixes, and your issue might not be solved by these steps. 
+            In such cases, we have a Discord Server for support, with a dedicated Help section and a ticket system 
+            that focuses on solving a single user’s problem at a time. We also have Helpers in the server, 
+            people who can effortlessly solve issues (in their free time). I am also a helper there, 
+            so if you need my personal assistance, you can join the server now by clicking the link below:
+        </p>
+        <h2>
+            <a href="https://discord.gg/Puk48qUewrJ" style="color: #003cff;"> Join DODI REPACKS Discord Server To Get Personal Assistance </a>
+            <p></p>
+            <iframe src="https://discord.com/widget?id=1281967196557283341&theme=dark" width="750" height="500" allowtransparency="false" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="centered-iframe"></iframe>
+        </h2>
+    </div>
+    <div class="rounded-section">
+        <h2 class="section-title">➥ Did You Download a Wrong File?</h2>
+        <p>
+            If you downloaded a "setup.exe," likely from Mega, and it was password-protected, way too small to fit the game, 
+            and didn’t do anything when run, then you have likely run malware. 
+            Go to <a href="https://rentry.org/XTXs-malware-removal-guide" style="color: #001eff;">The XTX Guy's malware removal guide</a>.
+        </p>
+        
+    </div>
+    <div class="rounded-section">
+        <h2 class="section-title">➥ Contribute</h2>
+        <p>
+            This guide, formerly written by soorzj and The XTX Guy on rentry.org using Markdown, has been recently ported to HTML using GitHub Pages. 
+            Feel like something is missing or have a point to add? Feel free to contact me on my Discord handle 
+            (<strong>@soorzj</strong>) or mail me at <strong>soorzj@proton.me</strong>, or simply go to the 
+            <a href="https://github.com/dodi-guide/guide-to-dodi-repacks" style="color: #002fff;">repository</a> 
+            to edit and submit a pull request on index.html.
+        </p>
+    </div>
+    
+    <div class="rounded-section">
+        <h2 class="section-title">➥ Disclaimer</h2>
+        <p>
+            None of the software listed in this guide for various purposes are sponsored, nor has anyone associated with DODI Repacks 
+            accepted any kind of endorsement for its usage. We merely "suggest" them because they are good and have been widely used without 
+            significant issues. This guide is <strong>COMPLETELY FREE</strong>. 
+        </p>
+        <p>
+            People or organizations associated with or outside DODI Repacks will <strong>NOT</strong> ask you for any kind of payment 
+            to view this guide or its contents. If you have been tricked into paying to see this guide, please report this directly 
+            to the DODI staff at our Discord server.
+        </p>
+    </div>
+    
+    <div class="rounded-section">
+        <h2 class="section-title">➥ Contributors & Special Thanks</h2>
+        <ul>
+            <li><strong>soorzj</strong> - Original author | Helper staff</li>
+            <li><strong>XTX Guy</strong> - Overhauled the guide to include a lot of information | Past helper & seeder</li>
+            <li><strong>DODI</strong> - For everything ❤️ | Owner of DODI Repacks</li>
+            <li><strong>Apo el Chapo</strong> - Proofreading and allowing me to make this guide | Active server moderator</li>
+            <li><strong>Queen (ALICE)</strong> - Contribution deprecated | Past helper staff</li>
+            <li><strong>Voidless</strong> - Spellcheck | Helper femboi (xd jk, thanks)</li>
+            <li><strong>RSH, BUNNY, Florix, Pushkar</strong> - For the love and support | Helper staff</li>
+        </ul>
+    </div>
+    
 
         <footer>
             <p>Created by SOORZJ & XTX. Need help? Join our <a href="https://discord.gg/Puk48qUewrJ">Discord Server</a>.</p>
