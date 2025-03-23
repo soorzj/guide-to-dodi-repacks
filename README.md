@@ -29,3 +29,6 @@ Voidless - Spellcheck | Helper femboi (xd jk, thanks)
 
 RSH, BUNNY, Florix, Pushkar - For the love and support | Helper staff
 
+Creatlydev for the button #1 [Check it out](https://uiverse.io/profile/Creatlydev)
+
+cssbuttons.io for the button #2 [Check it out](https://uiverse.io/profile/cssbuttons-io)
