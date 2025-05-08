@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<meta name="google-site-verification" content="comW2JmgD2MEt-KGEkuU1fNcu0jUo1F7X4eIuLnUL6Y" />
+    <meta name="google-site-verification" content="comW2JmgD2MEt-KGEkuU1fNcu0jUo1F7X4eIuLnUL6Y" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VWEWC34J5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -27,43 +27,17 @@
     <style>
         @font-face {
             font-family: 'CustomHeadingFont';
-            src: url('https://raw.githubusercontent.com/soorzj/guide-to-dodi-repacks/main/Audrey-Normal.otf') format('opentype');
+            src: url('https://raw.githubusercontent.com/soorzj/guide-to-dodi-repacks/main/assets/fonts/airstrikechrome.ttf') format('opentype');
         }
 
-        @keyframes rainbow-border {
-            0% {
-                border-color: red;
-            }
-
-            14% {
-                border-color: orange;
-            }
-
-            28% {
-                border-color: yellow;
-            }
-
-            42% {
-                border-color: green;
-            }
-
-            57% {
-                border-color: blue;
-            }
-
-            71% {
-                border-color: indigo;
-            }
-
-            85% {
-                border-color: violet;
-            }
-
-            100% {
-                border-color: red;
-            }
+        @font-face {
+            font-family: 'CustomNameFont';
+            src: url('https://raw.githubusercontent.com/soorzj/guide-to-dodi-repacks/main/assets/fonts/fear%20No%20more.ttf') format('opentype');
         }
-
+        @font-face {
+            font-family: 'CustomNameFont2';
+            src: url('https://raw.githubusercontent.com/soorzj/guide-to-dodi-repacks/main/assets/fonts/Trobus-Expanded.ttf') format('opentype');
+        }
         button {
             padding: 1.0em 3em;
             font-size: 12px;
@@ -75,18 +49,18 @@
             background-color: rgba(0, 0, 0, 0.4);
             border: none;
             border-radius: 45px;
-            box-shadow: 0px 15px 20px rgba(46, 157, 229, 0.2);
+            box-shadow: 0px 15px 20px rgba(241, 56, 229, 0.2);
             transition: all 0.3s ease 0s;
             cursor: pointer;
             outline: none;
-            position: fixed;
+            position: absolute;
             top: 20px;
             right: 20px;
         }
 
         button:hover {
             background-color: rgba(0, 0, 0, 0.7);
-            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            box-shadow: 0px 15px 20px rgba(241, 56, 229, 0.4);
             color: #fff;
             transform: translateY(-7px);
         }
@@ -105,19 +79,28 @@
         }
 
         body {
+            background-image: url('https://github.com/soorzj/guide-to-dodi-repacks/blob/main/assets/pictures/3f9a282e1dc73c366e608eb35bf4df99.jpg?raw=true');
+            background-size: static;
+            background-repeat: repeat;
+            background-position: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #00ff0825;
             color: #000000;
         }
 
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: rgb(7, 7, 41);
+            color: rgb(239, 27, 169);
             padding: 1rem 0;
             text-align: center;
+        }
+
+        header h1 {
+
+            font-weight: normal;
+            /* Makes the heading non-bold */
         }
 
         nav {
@@ -208,6 +191,24 @@
             font-family: monospace;
         }
 
+        namestyle {
+            font-family: "CUSTOMNAMEFONT";
+            letter-spacing: 6px;
+            font-size: 2.4rem;
+            color: rgb(255, 255, 255);
+        }
+        namestyle2 {
+            font-family: 'CUSTOMHEADINGFONT';  
+          
+            font-size: 2rem;
+            color: #ffffff;
+        }
+        namestyle3 {
+            font-family: 'CUSTOMNAMEFONT2';  
+            font-size: 1.29rem;
+            color: #ffffff;
+        }
+
         img {
             max-width: 100%;
             height: auto;
@@ -220,7 +221,7 @@
         }
 
         .section-title {
-            color: #4CAF50;
+            color: rgba(239, 27, 169, 1);
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
@@ -233,8 +234,21 @@
             font-weight: bold;
             /* Make the separator stand out */
             font-size: 1.2rem;
+            animation: colorChange 2s linear infinite;
+
             /* Slightly larger size */
         }
+        @keyframes colorChange {
+        0% {
+            color:rgba(239, 27, 169, 1);
+        }
+        50% {
+            color: rgba(255, 2, 36, 0.16); /* Bright pink */
+        }
+        100% {
+            color:rgba(239, 27, 169, 1);
+        }
+    }
 
         .centered-iframe {
             display: block;
@@ -288,7 +302,7 @@
 
         /* Enhancing Specific Sections */
         body.dark-mode .section-title {
-            color: #4caf50;
+            color: #ff00f7;
         }
 
         body.dark-mode p,
@@ -309,14 +323,15 @@
             /* Center-aligns the text horizontally */
             padding: 20px;
             /* Adds spacing around the footer content */
-            background-color: #f1f1f1;
+            background-color:  rgb(7, 7, 41);
             /* Light background for normal mode */
-            color: #000000;
+            color: #ffffff;
             /* Dark text for normal mode */
         }
 
         footer a {
-            color: #0044ff;
+            color: #bd0094;
+            font-weight: bold   ;
             /* Link color for normal mode */
             text-decoration: none;
             /* Removes underline from links */
@@ -339,39 +354,187 @@
             /* Link color for dark mode */
         }
 
-        .btn-github {
-            position: fixed;
+        .btn {
+            position:absolute;
             top: 20px;
             left: 20px;
             display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 0.5rem;
-            border: 2px solid;
-            text-decoration: none;
-            font-weight: 800;
+            overflow: hidden;
             padding: 0.75rem 1rem;
             font-size: 0.825rem;
             line-height: 1rem;
-            background-color: rgba(0, 0, 0, 0.4);
-            color: #fff;
-            border-radius: 100px;
-            box-shadow: 0px 15px 20px rgba(46, 157, 229, 0.2);
-            transition: all 0.3s ease;
-            animation: rainbow-border 2s linear infinite;
+            background-size: 300% 300%;
+            cursor: pointer;
+            backdrop-filter: blur(1rem);
+            border-radius: 5rem;
+            transition: 0.5s;
+            animation: gradient_301 5s ease infinite;
+            border: double 4px transparent;
+            background-image: linear-gradient(#212121, #212121),
+                linear-gradient(137.48deg,
+                    #ffdb3b 10%,
+                    #fe53bb 45%,
+                    #8f51ea 67%,
+                    #0044ff 87%);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
         }
 
-        .btn-github:hover {
-            background-color: rgba(0, 0, 0, 0.7);
-            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.2);
-            color: #fff;
-            transform: translateY(-0.25rem);
+        #container-stars {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transition: 0.5s;
+            backdrop-filter: blur(1rem);
+            border-radius: 5rem;
         }
 
-        .btn-github span {
+        .btn strong {
+            z-index: 2;
+            font-family: "Avalors Personal Use";
+            font-size: 12px;
+            letter-spacing: 5px;
+            color: #ffffff;
+            text-shadow: 0 0 4px white;
+        }
+
+        #glow {
+            position: absolute;
+            display: flex;
+            width: 12rem;
+        }
+
+        .circle {
+            width: 100%;
+            height: 30px;
+            filter: blur(2rem);
+            animation: pulse_3011 4s infinite;
+            z-index: -1;
+        }
+
+        .circle:nth-of-type(1) {
+            background: rgba(254, 83, 186, 0.636);
+        }
+
+        .circle:nth-of-type(2) {
+            background: rgba(142, 81, 234, 0.704);
+        }
+
+       
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        .btn:active {
+            border: double 4px #fe53bb;
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            animation: none;
+        }
+
+        .btn:active .circle {
+            background: #fe53bb;
+        }
+
+        #stars {
+            position: relative;
+            background: transparent;
+            width: 200rem;
+            height: 200rem;
+        }
+
+        #stars::after {
+            content: "";
+            position: absolute;
+            top: -10rem;
+            left: -100rem;
+            width: 100%;
+            height: 100%;
+            animation: animStarRotate 90s linear infinite;
+        }
+
+        #stars::after {
+            background-image: radial-gradient(#ffffff 1px, transparent 1%);
+            background-size: 50px 50px;
+        }
+
+        #stars::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 170%;
+            height: 500%;
+            animation: animStar 60s linear infinite;
+        }
+
+        #stars::before {
+            background-image: radial-gradient(#ffffff 1px, transparent 1%);
+            background-size: 50px 50px;
+            opacity: 0.5;
+        }
+
+        @keyframes animStar {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-135rem);
+            }
+        }
+
+        @keyframes animStarRotate {
+            from {
+                transform: rotate(360deg);
+            }
+
+            to {
+                transform: rotate(0);
+            }
+        }
+
+        @keyframes gradient_301 {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes pulse_3011 {
+            0% {
+                transform: scale(0.75);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            }
+
+            100% {
+                transform: scale(0.75);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+        }
+
+
+        .btn span {
             font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 2.5px;
-            font-weight: 500;
+
         }
 
         .playstore-button {
@@ -388,9 +551,11 @@
             transition: all 0.2s ease-in-out;
             text-decoration: none;
             animation: rainbow-border 2s linear infinite;
-            width: 89%; /* Adjusted to make it slightly less than full width */
-            margin: 0 auto; /* Centers the button */
-           
+            width: 89%;
+            /* Adjusted to make it slightly less than full width */
+            margin: 0 auto;
+            /* Centers the button */
+
         }
 
         .playstore-button:hover {
@@ -426,22 +591,27 @@
 
 <body>
     <button id="darkModeToggle">Dark Mode</button>
-    <a href="https://github.com/soorzj/guide-to-dodi-repacks" class="btn-github" target="_blank">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
-                fill="currentColor"></path>
-        </svg>
-        <span>Edit on Github</span>
-    </a>
+    
     <header style="color: rgb(179, 181, 255);">
+        <a href="https://github.com/soorzj/guide-to-dodi-repacks" class="btn" target="_blank">
+            <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+                    fill="white"></path>
+            </svg>
+            <span style="color: rgb(255, 255, 255);font-weight: bold;"> ㅤEdit on Github</span>
+        </a>
         <div class="header-logo" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
             <img src="https://i.imgur.com/ukwdBDJ.png" alt="Left Image" class="logo-image">
             <img src="https://styles.redditmedia.com/t5_ab6jz1/styles/communityIcon_fv793fnur75c1.png"
                 alt="Center Image" class="logo-image">
             <img src="https://i.imgur.com/AIPeWL4.png" alt="Right Image" class="logo-image">
         </div>
-        <h1 style="color: white; text-align: center;">SOORZJ &amp; XTX's Guide to DODI REPACKS</h1>
+        <h1 style="color: rgb(239, 27, 169);font-size: 3rem; text-align: center;">SOORZJ &amp; XTX's Guide to DODI
+            REPACKS</h1>
         <nav>
             <a href="https://soorzj.github.io/guide-to-dodi-repacks/#introduction"
                 style="color: white;">Introduction</a>
@@ -599,14 +769,14 @@
                 <li><strong style="color: rgb(255, 0, 0);">Don't forget the Adblocker</strong></li>
 
                 <li>
-                    <span style="color: green; font-weight: bold;">Pastebin</span>
+                    <span style="color: rgb(208, 0, 255); font-weight: bold;">Pastebin</span>
                     <ul>
                         <li>You will see a list of links arranged in order.</li>
                         <li>Copy-paste each link onto your browser and click go. Download each file.</li>
                     </ul>
                 </li>
                 <li>
-                    <span style="color: green; font-weight: bold;">Multi-up·org</span>
+                    <span style="color: rgb(208, 0, 255); font-weight: bold;">Multi-up·org</span>
                     <ul>
                         <li>Downloading from Multi-up is very straightforward. Don't disable Adblocker; you can still
                             download with an Adblocker on.</li>
@@ -621,7 +791,7 @@
                     </ul>
                 </li>
                 <li>
-                    <span style="color: green; font-weight: bold;">Loot-Link·com</span>
+                    <span style="color: rgb(208, 0, 255); font-weight: bold;">Loot-Link·com</span>
                     <ul>
                         <li>This may seem absurd to download Opera GX, enable notifications, or read news to get the
                             files at first, but there's a workaround.</li>
@@ -634,7 +804,7 @@
                     </ul>
                 </li>
                 <li>
-                    <span style="color: green; font-weight: bold;">Health Shield / Policy Buzz etc (tii·la)</span>
+                    <span style="color: rgb(208, 0, 255); font-weight: bold;">Health Shield / Policy Buzz etc (tii·la)</span>
                     <ul>
                         <li>Solve the <code>reCAPTCHA (I am human)</code> and click on <code>Continue</code>.</li>
                         <li>Wait for 10 seconds and click <code>Continue...</code>.</li>
@@ -646,7 +816,7 @@
                     </ul>
                 </li>
                 <li>
-                    <span style="color: green; font-weight: bold;">Swift Files</span>
+                    <span style="color: rgb(208, 0, 255); font-weight: bold;">Swift Files</span>
                     <ul>
                         <li>Ads are everywhere, so please use Ublock Origin; it will help a lot. Fake stuff is marked
                             through screenshots below.</li>
@@ -661,7 +831,7 @@
                     </ul>
                 </li>
                 <li>
-                    <span style="color: green; font-weight: bold;">KrakenFiles·com</span>
+                    <span style="color: rgb(208, 0, 255); font-weight: bold;">KrakenFiles·com</span>
                     <ul>
                         <li>The download process is simple and straightforward. Click the <code>Download now</code>
                             button on the bottom left.</li>
@@ -720,7 +890,7 @@
                     <span class="text-1">JOIN DODI REPACKS</span>
                     <span class="text-2">DISCORD</span>
                 </span>
-                
+
             </a>
             <p></p>
             <iframe src="https://discord.com/widget?id=1281967196557283341&theme=dark" width="750" height="500"
@@ -787,6 +957,8 @@
                 <li><strong>RSH, BUNNY, Florix, Pushkar</strong> - For the love and support | Helper staff</li>
             </ul>
     </div>
+    <span style="display: block; text-align: center;"><namestyle3>Written by</namestyle3></span>
+<span style="display: block; text-align: center;"><namestyle>SOORZJ </namestyle> <namestyle2>& ㅤ</namestyle2> <namestyle>XTX GUY</namestyle></span>
 
 
     <footer>
