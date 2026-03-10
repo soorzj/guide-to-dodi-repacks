@@ -105,7 +105,7 @@ function initDarkMode() {
   const saved = localStorage.getItem("colorMode");
   const apply = (mode) => {
     document.body.classList.toggle("light", mode === "light");
-    if (icon) icon.textContent = mode === "light" ? "ðŸŒ™" : "â˜€";
+    if (icon) icon.textContent = mode === "light" ? "☀︎" : "☾";
     btn.title = mode === "light" ? "Switch to dark mode" : "Switch to light mode";
   };
 
