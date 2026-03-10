@@ -1,5 +1,5 @@
 /* =====================================================
-   DODI REPACKS GUIDE â€” main.js
+   DODI REPACKS GUIDE — main.js
 
    Key principle: device type is detected ONCE when the
    page loads (window.innerWidth at that moment).
@@ -7,15 +7,15 @@
    before first paint (called in <head> inline if needed,
    but DOMContentLoaded is early enough here since CSS
    hides both navs by default until a class is set).
-   No resize listeners â€” no layout thrashing.
+   No resize listeners — no layout thrashing.
 ===================================================== */
 "use strict";
 
 /* =========================================================
-   1. DEVICE DETECTION â€” runs once, sets body class
+   1. DEVICE DETECTION — runs once, sets body class
    ========================================================= */
 function detectDevice() {
-  const BREAKPOINT = 900; // px â€” same threshold as design intent
+  const BREAKPOINT = 900; // px — same threshold as design intent
   if (window.innerWidth >= BREAKPOINT) {
     document.body.classList.add("is-desktop");
     document.body.classList.remove("is-mobile");
@@ -44,7 +44,7 @@ function initProgressBar() {
    3. ACTIVE NAV LINK
    Watches sections and highlights the matching nav link.
    Works for both sidebar (.sidebar-nav a) and mobile nav
-   (.mobile-nav-inner a) â€” selects whichever is active.
+   (.mobile-nav-inner a) — selects whichever is active.
    ========================================================= */
 function initActiveNav() {
   const sections = Array.from(document.querySelectorAll("section[id]"));
@@ -105,7 +105,7 @@ function initDarkMode() {
   const saved = localStorage.getItem("colorMode");
   const apply = (mode) => {
     document.body.classList.toggle("light", mode === "light");
-    if (icon) icon.textContent = mode === "light" ? "☀︎" : "☾";
+    if (icon) icon.textContent = mode === "light" ? "🌙" : "☀";
     btn.title = mode === "light" ? "Switch to dark mode" : "Switch to light mode";
   };
 
@@ -160,7 +160,7 @@ function initCardAnimations() {
 }
 
 /* =========================================================
-   8. KEYBOARD SHORTCUT â€” T = back to top
+   8. KEYBOARD SHORTCUT — T = back to top
    ========================================================= */
 function initKeyboard() {
   document.addEventListener("keydown", e => {
@@ -174,7 +174,7 @@ function initKeyboard() {
    INIT
    ========================================================= */
 document.addEventListener("DOMContentLoaded", () => {
-  detectDevice();        // â† sets is-desktop or is-mobile ONCE
+  detectDevice();        // ← sets is-desktop or is-mobile ONCE
   initProgressBar();
   initActiveNav();
   initSmoothScroll();
